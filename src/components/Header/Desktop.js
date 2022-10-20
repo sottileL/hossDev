@@ -10,10 +10,10 @@ import Typography from '@mui/material/Typography';
 import Logo from '../../images/logo.png';
 
 const TitleNavbar = styled(Typography)(() => ({
-    fontSize: '0.9rem!important',
+    fontSize: '1rem!important',
     fontWeight: 'medium !important',
     color: 'white',
-    paddingLeft: '15px',
+    paddingLeft: '20px',
     letterSpacing: '0px',
     textDecoration: 'none'
 }));
