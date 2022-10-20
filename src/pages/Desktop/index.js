@@ -22,7 +22,7 @@ import Marcas from '../../components/Marcas/Desktop';
 import Banner1 from '../../images/banner-1.webp';
 import Banner2 from '../../images/banner-2.webp';
 import FirstBlock from '../../images/cuadros/cuadro-1.webp';
-import Logo from '../../images/logo.webp';
+import Logo from '../../images/logo.png';
 import Nosotros from '../../images/nosotros.webp';
 import SecondBlock from '../../images/cuadros/cuadro-2.webp';
 
@@ -252,14 +252,46 @@ const Desktop = () => {
                     </Grid>
                 </Grid>
             </Grid>
-            <a
-                href="https://api.whatsapp.com/send?phone=+5493412129143&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20..."
-                className="float"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <i className="fa fa-whatsapp my-float"/>
-            </a>
+            <Grid container xs={12} id="prueba" direction="row" width="100%" justifyContent="center" alignItems="center">
+                <Grid container xs={5} direction="column" spacing={2}>
+                    <Grid item xs={6} display="flex" justifyContent="center">
+                        <img
+                            src={Logo}
+                            alt="imgNosotros"
+                            style={{
+                                width: '10%', height: 'auto', alignSelf: 'center', textAlign: 'center'
+                            }}
+                        />
+                    </Grid>
+                    <Grid item xs={6} display="flex" justifyContent="center">
+                        <Typography fontFamily="Arial" color="white" fontWeight="light" fontSize={11} textAlign="left">
+                            Somos un agente de inversiones y construimos nuestro
+                            <br/>
+                            trabajo de manera tecnológica, transparente, seria y ágil.
+                            <br/>
+                            La educación en el ámbito financiero nos parece
+                            <br/>
+                            fundamental para incluir a toda la sociedad.
+                        </Typography>
+                    </Grid>
+                </Grid>
+                <Grid container xs={5} direction="row" rowSpacing="11">
+                    <Grid item xs={2} display="flex" justifyContent="center">
+                        <Typography fontFamily="Arial" color="white" fontWeight="bold" fontSize={12}>
+                            CONTACTO:
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={10}/>
+                    <Typography fontFamily="Arial" color="white" fontWeight="light" fontSize={11} textAlign="left">
+                        Dirección: Paraguay 777 piso 10 b
+                        <br/>
+                        Whatsapp: 34160601189
+                        <br/>
+                        Mail: atencionalcliente@hoss.com.ar
+                    </Typography>
+                </Grid>
+                <Grid container xs={2} display="flex"/>
+            </Grid>
         </Grid>
     );
 };

@@ -6,7 +6,7 @@ import {styled} from '@mui/styles';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
-import Logo from '../../images/logo.webp';
+import logo from '../../images/logo.png';
 
 import Menu from '../MenuComponent';
 
@@ -46,7 +46,7 @@ const HeaderMobile = ({handleClickMenu}) => (
         </Grid>
         <Grid item xs={4}>
             <img
-                src={Logo}
+                src={logo}
                 alt="logo"
                 style={{
                     width: 'auto', height: '85px'

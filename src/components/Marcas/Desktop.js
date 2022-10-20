@@ -5,85 +5,40 @@
 import React from 'react';
 
 import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import {styled} from '@mui/styles';
+import rectangle from '../../images/rectangle.png';
 
-import Aprilia from '../../images/marcas/aprilia.webp';
-import Guzzi from '../../images/marcas/guzzi.webp';
-import Piaggio from '../../images/marcas/paiggio.webp';
-import Vespa from '../../images/marcas/vespa.webp';
+const TitleNavbar = styled(Typography)(() => ({
+    fontSize: '0.9rem!important',
+    fontWeight: 'medium !important',
+    color: 'white',
+    paddingLeft: '15px',
+    letterSpacing: '0px',
+    textDecoration: 'none'
+}));
 
-const MarcasDesktop = ({setIsOpen, setBrand}) => (
-    <Grid container height="400px">
-        <Grid
-            item
-            xs={3}
-            sx={{
-                backgroundColor: '#1875cf', cursor: 'pointer'
-            }}
-            display="flex"
-            justifyContent="center"
-            onClick={() => { setBrand('piaggio'); setIsOpen(true); }}
-        >
-            <img
-                src={Piaggio}
-                alt="piaggio"
-                style={{
-                    width: '80%', alignSelf: 'center'
-                }}
-            />
+const MarcasDesktop = () => (
+    <Grid container direction="column">
+        <Grid container direction="column" sx={{backgroundColor: '#ffffff'}} spacing={0} >
+            <Grid item display="flex" pl={5} pt={1}>
+                <Typography fontFamily="Arial" fontWeight="bold" fontSize={20}>
+                    NOSOTROS
+                </Typography>
+            </Grid>
+            <Grid item>
+                <img
+                    src={rectangle}
+                    alt="rectangle"
+                    style={{
+                        width: 'auto', height: '10px'
+                    }}
+                />
+            </Grid>
         </Grid>
-        <Grid
-            item
-            xs={3}
-            sx={{
-                backgroundColor: '#4fd6b2', cursor: 'pointer'
-            }}
-            display="flex"
-            justifyContent="center"
-            onClick={() => { setBrand('vespa'); setIsOpen(true); }}
-        >
-            <img
-                src={Vespa}
-                alt="vespa"
-                style={{
-                    width: '80%', alignSelf: 'center'
-                }}
-            />
-        </Grid>
-        <Grid
-            item
-            xs={3}
-            sx={{
-                backgroundColor: '#ff0000', cursor: 'pointer'
-            }}
-            display="flex"
-            justifyContent="center"
-            onClick={() => { setBrand('aprilia'); setIsOpen(true); }}
-        >
-            <img
-                src={Aprilia}
-                alt="aprilia"
-                style={{
-                    width: '70%', alignSelf: 'center'
-                }}
-            />
-        </Grid>
-        <Grid
-            item
-            xs={3}
-            sx={{
-                backgroundColor: 'black', cursor: 'pointer'
-            }}
-            display="flex"
-            justifyContent="center"
-            onClick={() => { setBrand('guzzi'); setIsOpen(true); }}
-        >
-            <img
-                src={Guzzi}
-                alt="guzzi"
-                style={{
-                    width: '80%', alignSelf: 'center'
-                }}
-            />
+        <Grid container sx={{backgroundColor: '#ffffff'}} direction="column">
+            <Grid item md={4} pl={20} pt={1.5} pb={1.5} sx={{backgroundColor: '#282a37'}}/>
+            <Grid item md={8} pr={20} sx={{backgroundColor: '#282a37'}} display="flex" direction="row" alignItems="center" justifyContent="flex-end"/>
         </Grid>
     </Grid>
 );

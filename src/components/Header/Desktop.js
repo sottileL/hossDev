@@ -7,41 +7,48 @@ import {styled} from '@mui/styles';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
-import Logo from '../../images/logo.webp';
+import Logo from '../../images/logo.png';
 
 const TitleNavbar = styled(Typography)(() => ({
-    fontSize: '1.30rem!important',
-    fontWeight: 'bold !important',
+    fontSize: '0.9rem!important',
+    fontWeight: 'medium !important',
     color: 'white',
-    paddingLeft: 25,
-    letterSpacing: '2px',
+    paddingLeft: '15px',
+    letterSpacing: '0px',
     textDecoration: 'none'
 }));
 
 const HeaderDesktop = ({handleClickMenu}) => (
-    <Grid container direction="row" py={4} pl={10}>
-        <Grid item md={3}>
-            <img
-                src={Logo}
-                alt="logo"
-                style={{
-                    width: 'auto', height: '85px'
-                }}
-            />
+    <Grid container direction="column">
+        <Grid item md={2} sx={{backgroundColor: '#cccccc'}} display="flex" justifyContent="flex-end" pr={8}>
+            <Typography fontFamily="Arial" fontWeight="light" fontSize={15}>
+                341-6061189- atencionalcliente@hoss.com.ar
+            </Typography>
         </Grid>
-        <Grid item md={9} pr={20} display="flex" direction="row" alignItems="center" justifyContent="flex-end">
-            <TitleNavbar component={Link} to="#inicio" onClick={() => handleClickMenu('inicio')}>
-                INICIO
-            </TitleNavbar>
-            <TitleNavbar component={Link} to="#marcas" onClick={() => handleClickMenu('marcas')}>
-                MARCAS
-            </TitleNavbar>
-            <TitleNavbar component={Link} to="#nosotros" onClick={() => handleClickMenu('nosotros')}>
-                NOSOTROS
-            </TitleNavbar>
-            <TitleNavbar component={Link} to="#contacto" onClick={() => handleClickMenu('contacto')}>
-                CONTACTO
-            </TitleNavbar>
+        <Grid container sx={{backgroundColor: '#cccccc'}} direction="row" pb={2}>
+            <Grid item md={4} pl={15} pt={3} pb={3} sx={{backgroundColor: '#282a37'}}>
+                <img
+                    src={Logo}
+                    alt="logo"
+                    style={{
+                        width: 'auto', height: '50px'
+                    }}
+                />
+            </Grid>
+            <Grid item md={8} pr={8} sx={{backgroundColor: '#282a37'}} display="flex" direction="row" alignItems="center" justifyContent="flex-end">
+                <TitleNavbar component={Link} to="#nosotros" onClick={() => handleClickMenu('nosotros')}>
+                    NOSOTROS
+                </TitleNavbar>
+                <TitleNavbar component={Link} to="#comisiones" onClick={() => handleClickMenu('comisiones')}>
+                    COMISIONES
+                </TitleNavbar>
+                <TitleNavbar component={Link} to="#resumencuenta" onClick={() => handleClickMenu('resumencuenta')}>
+                    RESUMEN DE CUENTA
+                </TitleNavbar>
+                <TitleNavbar component={Link} to="#contacto" onClick={() => handleClickMenu('contacto')}>
+                    CONTACTO
+                </TitleNavbar>
+            </Grid>
         </Grid>
     </Grid>
 );
