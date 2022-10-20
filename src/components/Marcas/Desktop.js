@@ -7,25 +7,31 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import {styled} from '@mui/styles';
+import {Divider} from '@mui/material';
 import rectangle from '../../images/rectangle.png';
 import darklogo from '../../images/darklogo.png';
 
-const TitleNavbar = styled(Typography)(() => ({
-    fontSize: '0.9rem!important',
-    fontWeight: 'medium !important',
-    color: 'white',
-    paddingLeft: '15px',
-    letterSpacing: '0px',
-    textDecoration: 'none'
+const TitleTypography = styled(Typography)(() => ({
+    fontSize: '1.2rem!important',
+    fontWeight: 'bold !important',
+    color: 'black',
+    letterSpacing: '1px'
+}));
+
+const SubtitleTypography = styled(Typography)(() => ({
+    fontSize: '1.2',
+    fontWeight: 'light',
+    color: 'black',
+    letterSpacing: '0.6px'
 }));
 
 const MarcasDesktop = () => (
-    <Grid container direction="row">
+    <Grid container direction="row" sx={{backgroundColor: '#cccccc'}}>
         <Grid container direction="column" sx={{backgroundColor: '#ffffff'}}>
             <Grid item display="flex" pl={5} pt={1}>
-                <Typography fontFamily="Arial" fontWeight="bold" fontSize={20}>
+                <TitleTypography fontFamily="Arial" fontWeight="bold" fontSize={20}>
                     NOSOTROS
-                </Typography>
+                </TitleTypography>
             </Grid>
             <Grid item>
                 <img
@@ -37,8 +43,8 @@ const MarcasDesktop = () => (
                 />
             </Grid>
         </Grid>
-        <Grid container direction="column" sx={{backgroundColor: '#cccccc'}}>
-            <Grid item pl={5} pt={2}>
+        <Grid container direction="column" xs={12}>
+            <Grid item pl={7} pt={2}>
                 <img
                     src={darklogo}
                     alt="darklogo"
@@ -47,10 +53,44 @@ const MarcasDesktop = () => (
                     }}
                 />
             </Grid>
+        </Grid>
+        <Grid container direction="row" justifyContent="center" width="80%" pl={7} pt={7} pb={8}>
+            <Grid item xs={6}>
+                <TitleTypography fontFamily="Arial">
+                    HOSS INVERSIONES
+                </TitleTypography>
+                <SubtitleTypography>
+                    <br/>
+                    Somos un agente de inversiones y
+                    <br/>
+                    construimos nuestro trabajo de manera
+                    <br/>
+                    tecnológica, transparente seria y ágil.
+                    <br/>
+                    La educación en el ámbito financiero
+                    <br/>
+                    nos parece fundamentel para incluir a
+                    <br/>
+                    toda la sociedad,
+                </SubtitleTypography>
+            </Grid>
+            <Grid item xs={6} pt={5}>
+                <SubtitleTypography fontFamily="Arial" fontWeight="bold">
+                    Agente de negociación
+                    <br/>
+                </SubtitleTypography>
+                <SubtitleTypography fontFamily="Arial">
+                    Mercado registrado ante C.N.V - Matrícula Nº 1097
+                    <br/>
+                    Mercado argentino de valores - Matrícula Nº 765
+                    <br/>
+                    Matba Rofex - Matrícula Nº 902
+                </SubtitleTypography>
+            </Grid>
+        </Grid>
+        <Grid container direction="row" justifyContent="center" backgroundColor="">
             <Grid item>
-                <Typography fontFamily="Arial" fontWeight="bold" fontSize={20}>
-                    NOSOTROS
-                </Typography>
+                <Divider orientation="horizontal" light="true" variant="fullWidth"/>
             </Grid>
         </Grid>
     </Grid>

@@ -18,12 +18,19 @@ const TitleNavbar = styled(Typography)(() => ({
     textDecoration: 'none'
 }));
 
+const SubtitleTypography = styled(Typography)(() => ({
+    fontSize: '1.2',
+    fontWeight: 'light',
+    color: 'gray',
+    letterSpacing: '0.6px'
+}));
+
 const HeaderDesktop = ({handleClickMenu}) => (
     <Grid container direction="column">
         <Grid item md={2} sx={{backgroundColor: '#cccccc'}} display="flex" justifyContent="flex-end" pr={8}>
-            <Typography fontFamily="Arial" fontWeight="light" fontSize={15}>
+            <SubtitleTypography fontFamily="Arial" fontSize={15}>
                 341-6061189- atencionalcliente@hoss.com.ar
-            </Typography>
+            </SubtitleTypography>
         </Grid>
         <Grid container sx={{backgroundColor: '#cccccc'}} direction="row" pb={2}>
             <Grid item md={4} pl={15} pt={3} pb={3} sx={{backgroundColor: '#282a37'}}>
