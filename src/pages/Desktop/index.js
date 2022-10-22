@@ -1,5 +1,4 @@
 import React, {useRef, useState} from 'react';
-import {styled} from '@mui/styles';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
@@ -10,7 +9,6 @@ import LocationCityRounded from '@mui/icons-material/LocationOn';
 import WhatsApp from '@mui/icons-material/WhatsApp';
 import FacebookOutlined from '@mui/icons-material/FacebookOutlined';
 
-import {Carousel} from 'react-responsive-carousel';
 import Lightbox from 'react-image-lightbox';
 
 import getImages from '../../helpers/getImages';
@@ -18,9 +16,6 @@ import getImages from '../../helpers/getImages';
 import ContactForm from '../../components/ContactForm/Desktop';
 import Header from '../../components/Header/Desktop';
 import Marcas from '../../components/Marcas/Desktop';
-
-import Banner1 from '../../images/banner-1.webp';
-import Banner2 from '../../images/banner-2.webp';
 import FirstBlock from '../../images/cuadros/cuadro-1.webp';
 import Logo from '../../images/logo.png';
 import Nosotros from '../../images/nosotros.webp';
@@ -34,13 +29,6 @@ import Vespa from '../../images/marcas/vespa.webp';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import 'react-image-lightbox/style.css';
-
-const SubtitleTypography = styled(Typography)(() => ({
-    fontSize: '23px!important',
-    fontWeight: 'bold !important',
-    color: 'white',
-    letterSpacing: '2px'
-}));
 
 const Desktop = () => {
     const [brand, setBrand] = useState(null);
@@ -74,33 +62,6 @@ const Desktop = () => {
     return (
         <Grid direction="column" width="100%" id="inicio" ref={inicioRef}>
             <Header handleClickMenu={handleClickMenu}/>
-            <Grid item>
-                <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false}>
-                    <div>
-                        <img
-                            src={Banner1}
-                            alt="banner-1"
-                            style={{
-                                width: '100%', height: 'auto'
-                            }}
-                        />
-                    </div>
-                    <div>
-                        <img
-                            src={Banner2}
-                            alt="banner-2"
-                            style={{
-                                width: '100%', height: 'auto'
-                            }}
-                        />
-                    </div>
-                </Carousel>
-                <SubtitleTypography my={4} textAlign="center">
-                    MÁS QUE UN LUGAR PARA VISITAR, UN
-                    <br/>
-                    DESTINO AL QUE LA GENTE QUIERE VOLVER
-                </SubtitleTypography>
-            </Grid>
             <Grid item id="marcas" ref={marcasRef}>
                 <Marcas setIsOpen={setIsOpen} setBrand={setBrand}/>
             </Grid>

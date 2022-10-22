@@ -27,7 +27,7 @@ const SubtitleTypography = styled(Typography)(() => ({
 }));
 
 const FooterTypography = styled(Typography)(() => ({
-    fontSize: '1.2',
+    fontSize: '1.0',
     fontWeight: 'light !important',
     color: 'white',
     letterSpacing: '0.6px'
@@ -36,7 +36,7 @@ const FooterTypography = styled(Typography)(() => ({
 const MarcasDesktop = () => (
     <Grid container direction="row" sx={{backgroundColor: '#cccccc'}}>
         <Grid container direction="column" sx={{backgroundColor: '#ffffff'}}>
-            <Grid item display="flex" pl={5} pt={1}>
+            <Grid item display="flex" pl={7} pt={1}>
                 <TitleTypography fontFamily="Arial" fontWeight="bold" fontSize={20}>
                     NOSOTROS
                 </TitleTypography>
@@ -52,7 +52,7 @@ const MarcasDesktop = () => (
             </Grid>
         </Grid>
         <Grid container direction="column" xs={12}>
-            <Grid item pl={7} pt={2}>
+            <Grid item pl={7} pt={8}>
                 <img
                     src={darklogo}
                     alt="darklogo"
@@ -63,7 +63,7 @@ const MarcasDesktop = () => (
             </Grid>
         </Grid>
         <Grid container direction="row" justifyContent="center" width="80%" pl={7} pt={7} pb={8}>
-            <Grid item xs={5}>
+            <Grid item xs={6}>
                 <TitleTypography fontFamily="Arial">
                     HOSS INVERSIONES
                 </TitleTypography>
@@ -82,7 +82,7 @@ const MarcasDesktop = () => (
                     toda la sociedad,
                 </SubtitleTypography>
             </Grid>
-            <Grid item xs={5} pt={5} >
+            <Grid item xs={6} pt={5} >
                 <SubtitleTypography fontFamily="Arial" fontWeight="bold">
                     Agente de negociación
                     <br/>
@@ -95,16 +95,16 @@ const MarcasDesktop = () => (
                     Matba Rofex - Matrícula Nº 902
                 </SubtitleTypography>
             </Grid>
-            <Grid item xs={2}/>
         </Grid>
-        <Grid container direction="row" backgroundColor="#282a37" pb={50} pt={5}>
-            <Grid container direction="column" xs={7} spacing={3} display="flex" pl={10}>
+        <Divider orientation="horizontal" flexItem sx={{mr: '-1px'}}/>
+        <Grid container direction="row" backgroundColor="#282a37" pb={10} pt={5}>
+            <Grid container direction="column" xs={7} spacing={3} display="flex" pl={10} pt={2}>
                 <Grid item xs={2}>
                     <img
                         src={logo}
                         alt="logo"
                         style={{
-                            width: 'auto', height: '50px'
+                            width: 'auto', height: '40px'
                         }}
                     />
                 </Grid>
@@ -120,7 +120,7 @@ const MarcasDesktop = () => (
                     </FooterTypography>
                 </Grid>
             </Grid>
-            <Grid item xs={5} pt={10}>
+            <Grid item xs={5} pt={9}>
                 <FooterTypography fontFamily="Arial" fontWeight="bold">
                     CONTACTO
                     <br/>

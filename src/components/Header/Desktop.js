@@ -26,14 +26,14 @@ const SubtitleTypography = styled(Typography)(() => ({
 }));
 
 const HeaderDesktop = ({handleClickMenu}) => (
-    <Grid container direction="column">
-        <Grid item md={2} sx={{backgroundColor: '#cccccc'}} display="flex" justifyContent="flex-end" pr={8}>
+    <Grid container direction="column" sx={{backgroundColor: '#cccccc'}} >
+        <Grid item display="flex" justifyContent="flex-end" pr={8}>
             <SubtitleTypography fontFamily="Arial" fontSize={15}>
                 341-6061189- atencionalcliente@hoss.com.ar
             </SubtitleTypography>
         </Grid>
-        <Grid container sx={{backgroundColor: '#cccccc'}} direction="row" pb={2}>
-            <Grid item md={4} pl={15} pt={3} pb={3} sx={{backgroundColor: '#282a37'}}>
+        <Grid container direction="row" pb={2}>
+            <Grid item xs={4} pl={7} pt={3} pb={3} sx={{backgroundColor: '#282a37'}}>
                 <img
                     src={Logo}
                     alt="logo"
@@ -42,7 +42,7 @@ const HeaderDesktop = ({handleClickMenu}) => (
                     }}
                 />
             </Grid>
-            <Grid item md={8} pr={8} sx={{backgroundColor: '#282a37'}} display="flex" direction="row" alignItems="center" justifyContent="flex-end">
+            <Grid item xs={8} pr={8} sx={{backgroundColor: '#282a37'}} display="flex" direction="row" alignItems="center" justifyContent="flex-end">
                 <TitleNavbar component={Link} to="#nosotros" onClick={() => handleClickMenu('nosotros')}>
                     NOSOTROS
                 </TitleNavbar>
