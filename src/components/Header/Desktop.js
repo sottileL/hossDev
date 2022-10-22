@@ -10,7 +10,7 @@ import Typography from '@mui/material/Typography';
 import Logo from '../../images/logo.png';
 
 const TitleNavbar = styled(Typography)(() => ({
-    fontSize: '1rem!important',
+    fontSize: '1.2rem!important',
     fontWeight: 'medium !important',
     color: 'white',
     paddingLeft: '20px',
@@ -26,8 +26,8 @@ const SubtitleTypography = styled(Typography)(() => ({
 }));
 
 const HeaderDesktop = ({handleClickMenu}) => (
-    <Grid container direction="column" sx={{backgroundColor: '#cccccc'}} >
-        <Grid item display="flex" justifyContent="flex-end" pr={8}>
+    <Grid container direction="column" sx={{backgroundColor: '#cccccc'}} pb={1}>
+        <Grid item display="flex" justifyContent="flex-end" pr={8} pt={1.2}>
             <SubtitleTypography fontFamily="Arial" fontSize={15}>
                 341-6061189- atencionalcliente@hoss.com.ar
             </SubtitleTypography>
@@ -38,7 +38,7 @@ const HeaderDesktop = ({handleClickMenu}) => (
                     src={Logo}
                     alt="logo"
                     style={{
-                        width: 'auto', height: '50px'
+                        width: 'auto', height: '55px'
                     }}
                 />
             </Grid>
