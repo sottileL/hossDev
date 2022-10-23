@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid';
 
 import Header from '../../components/Header/Desktop';
 import Footer from '../../components/Footer/FooterDesktop';
-import Comisiones from '../../components/Comisiones/ComisionesDesktop';
+import Resumen from '../../components/Resumen/ResumenDesktop';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import 'react-image-lightbox/style.css';
@@ -36,8 +36,8 @@ const Desktop = () => {
     return (
         <Grid direction="column" width="100%" id="inicio" ref={nosotrosRef}>
             <Header handleClickMenu={handleClickMenu}/>
-            <Grid item id="comisiones" ref={comisionesRef}>
-                <Comisiones/>
+            <Grid item id="resumen" ref={resumenRef}>
+                <Resumen/>
             </Grid>
             <Grid item id="footer">
                 <Footer/>
