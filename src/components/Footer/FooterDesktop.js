@@ -8,6 +8,7 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import {styled} from '@mui/styles';
+import {Divider} from '@mui/material';
 import logo from '../../images/logo.png';
 
 const FooterTypography = styled(Typography)(() => ({
@@ -18,43 +19,53 @@ const FooterTypography = styled(Typography)(() => ({
 }));
 
 const FooterDesktop = () => (
-    <Grid container direction="row" sx={{backgroundColor: '#cccccc'}}>
-        <Grid container direction="row" backgroundColor="#282a37" pb={10} pt={5}>
-            <Grid container direction="column" xs={5} spacing={3} display="flex" pl={7} pt={2}>
-                <Grid item xs={2}>
-                    <img
-                        src={logo}
-                        alt="logo"
-                        style={{
-                            width: 'auto', height: '40px'
-                        }}
-                    />
+    <Grid container direction="column">
+        <Grid item>
+            <Divider
+                style={{
+                    width: '100%', height: '4px', background: '#74757d'
+                }}
+                orientation="horizontal"
+            />
+        </Grid>
+        <Grid container direction="column" sx={{backgroundColor: '#e6e6e6'}} pt={2}>
+            <Grid container direction="row" backgroundColor="#282a37" pb={10} pt={5}>
+                <Grid container direction="column" md={5} spacing={3} display="flex" pl={7} pt={2}>
+                    <Grid item xs={2}>
+                        <img
+                            src={logo}
+                            alt="logo"
+                            style={{
+                                width: 'auto', height: '45px'
+                            }}
+                        />
+                    </Grid>
+                    <Grid item md={2}>
+                        <FooterTypography>
+                            Somos un agente de inversiones y construimos nuestro
+                            <br/>
+                            trabajo de manera tecnológica, transparente, seria y ágil
+                            <br/>
+                            La educación en el ámbito financiero nos parece
+                            <br/>
+                            fundamental para incluir a toda la sociedad.
+                        </FooterTypography>
+                    </Grid>
                 </Grid>
-                <Grid item xs={2}>
-                    <FooterTypography fontFamily="Arial">
-                        Somos un agente de inversiones y construimos nuestro
+                <Grid item md={7} pt={9}>
+                    <FooterTypography fontWeight="bold">
+                        CONTACTO
                         <br/>
-                        trabajo de manera tecnológica, transparente, seria y ágil
                         <br/>
-                        La educación en el ámbito financiero nos parece
+                    </FooterTypography>
+                    <FooterTypography>
+                        Dirección: Paraguay 777 piso 10b
                         <br/>
-                        fundamental para incluir a toda la sociedad.
+                        Whatsapp: 34160601189
+                        <br/>
+                        Mail: atencionalcliente@hoss.com.ar
                     </FooterTypography>
                 </Grid>
-            </Grid>
-            <Grid item xs={7} pt={9}>
-                <FooterTypography fontFamily="Arial" fontWeight="bold">
-                    CONTACTO
-                    <br/>
-                    <br/>
-                </FooterTypography>
-                <FooterTypography fontFamily="Arial">
-                    Dirección: Paraguay 777 piso 10b
-                    <br/>
-                    Whatsapp: 34160601189
-                    <br/>
-                    Mail: atencionalcliente@hoss.com.ar
-                </FooterTypography>
             </Grid>
         </Grid>
     </Grid>

@@ -27,18 +27,22 @@ const SubtitleTypography = styled(Typography)(() => ({
 
 const NosotrosDesktop = () => (
     <Grid container direction="row" sx={{backgroundColor: '#e6e6e6'}}>
-        <Grid container direction="column" sx={{backgroundColor: '#ffffff'}}>
-            <Grid item display="flex" pl={7} pt={1}>
+        <Grid
+            container
+            direction="column"
+            sx={{backgroundColor: '#ffffff'}}
+        >
+            <Grid item xs={2} pl={7} pt={1}>
                 <TitleTypography fontFamily="Arial">
                     NOSOTROS
                 </TitleTypography>
             </Grid>
-            <Grid item>
+            <Grid item xs={2}>
                 <img
                     src={rectangle}
                     alt="rectangle"
                     style={{
-                        width: '20%', height: '10px'
+                        width: '220px', height: '12px'
                     }}
                 />
             </Grid>
@@ -49,13 +53,13 @@ const NosotrosDesktop = () => (
                     src={darklogo}
                     alt="darklogo"
                     style={{
-                        width: '60%', height: 'auto'
+                        width: 'auto', height: '150px'
                     }}
                 />
             </Grid>
         </Grid>
-        <Grid container direction="row" xs={10} justifyContent="center" width="80%" pl={7} pt={7} pb={8}>
-            <Grid item xs={4}>
+        <Grid container direction="row" md={10} justifyContent="center" width="80%" pl={7} pt={7} pb={8}>
+            <Grid item md={5}>
                 <TitleTypography>
                     HOSS INVERSIONES
                 </TitleTypography>
@@ -71,10 +75,10 @@ const NosotrosDesktop = () => (
                     <br/>
                     nos parece fundamentel para incluir a
                     <br/>
-                    toda la sociedad,
+                    toda la sociedad.
                 </SubtitleTypography>
             </Grid>
-            <Grid item xs={8} pt={5} >
+            <Grid item md={5} pt={5} >
                 <SubtitleTypography fontWeight="bold">
                     Agente de negociación
                     <br/>
@@ -87,6 +91,7 @@ const NosotrosDesktop = () => (
                     Matba Rofex - Matrícula Nº 902
                 </SubtitleTypography>
             </Grid>
+            <Grid item md={2}/>
         </Grid>
     </Grid>
 );

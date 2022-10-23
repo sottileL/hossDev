@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom';
 import {styled} from '@mui/styles';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 
 import Logo from '../../images/logo.png';
 
@@ -26,14 +27,18 @@ const SubtitleTypography = styled(Typography)(() => ({
 }));
 
 const HeaderDesktop = ({handleClickMenu}) => (
-    <Grid container direction="column" sx={{backgroundColor: '#cccccc'}} pb={1}>
-        <Grid item display="flex" justifyContent="flex-end" pr={8} pt={1.2}>
-            <SubtitleTypography fontFamily="Arial" fontSize={15}>
+    <Grid container direction="column" sx={{backgroundColor: '#cccccc'}} pb={2}>
+        <Grid item display="flex" justifyContent="flex-end" pr={8} pt={0.2} pb={0.2}>
+            <PhoneInTalkIcon sx={{
+                fontSize: 20, paddingRight: 1, color: 'gray'
+            }}
+            />
+            <SubtitleTypography fontSize={15}>
                 341-6061189- atencionalcliente@hoss.com.ar
             </SubtitleTypography>
         </Grid>
-        <Grid container direction="row" pb={2}>
-            <Grid item xs={4} pl={7} pt={3} pb={3} sx={{backgroundColor: '#282a37'}}>
+        <Grid container direction="row" pb={2} sx={{backgroundColor: '#282a37'}}>
+            <Grid item md={3} pl={7} pt={3} pb={0.5}>
                 <img
                     src={Logo}
                     alt="logo"
@@ -42,7 +47,7 @@ const HeaderDesktop = ({handleClickMenu}) => (
                     }}
                 />
             </Grid>
-            <Grid item xs={8} pr={8} sx={{backgroundColor: '#282a37'}} display="flex" direction="row" alignItems="center" justifyContent="flex-end">
+            <Grid item md={9} direction="row" display="flex" alignItems="center" justifyContent="flex-end" pr={8} pt={1.5}>
                 <TitleNavbar component={Link} to="#nosotros" onClick={() => handleClickMenu('nosotros')}>
                     NOSOTROS
                 </TitleNavbar>
