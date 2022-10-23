@@ -52,7 +52,7 @@ const FooterDesktop = () => (
                         </FooterTypography>
                     </Grid>
                 </Grid>
-                <Grid item md={7} pt={9}>
+                <Grid item md={6} pt={9}>
                     <FooterTypography fontWeight="bold">
                         CONTACTO
                         <br/>
@@ -67,6 +67,7 @@ const FooterDesktop = () => (
                     </FooterTypography>
                 </Grid>
             </Grid>
+            <Grid item md={1} pt={5} sx={{backgroundColor: '#555763'}}/>
         </Grid>
     </Grid>
 );
