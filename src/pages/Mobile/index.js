@@ -18,7 +18,6 @@ import getImages from '../../helpers/getImages';
 
 import ContactForm from '../../components/ContactForm/Mobile';
 import Header from '../../components/Header/Mobile';
-import Marcas from '../../components/Marcas/Mobile';
 
 import Banner1 from '../../images/banner-mobile-1.webp';
 import Banner2 from '../../images/banner-mobile-2.webp';
@@ -110,9 +109,7 @@ const Mobile = () => {
                     DESTINO AL QUE LA GENTE QUIERE VOLVER
                 </SubtitleTypography>
             </Grid>
-            <Grid item id="marcas" ref={marcasRef}>
-                <Marcas setIsOpen={setIsOpen} setBrand={setBrand}/>
-            </Grid>
+            <Grid item id="marcas" ref={marcasRef}/>
             {isOpen && (
                 <Lightbox
                     mainSrc={images[photoIndex]}
