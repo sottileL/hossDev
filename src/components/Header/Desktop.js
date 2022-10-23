@@ -27,7 +27,7 @@ const SubtitleTypography = styled(Typography)(() => ({
 }));
 
 const HeaderDesktop = ({handleClickMenu}) => (
-    <Grid container direction="column" sx={{backgroundColor: '#cccccc'}} pb={2}>
+    <Grid container direction="column" sx={{backgroundColor: '#e6e6e6'}} pb={2}>
         <Grid item display="flex" justifyContent="flex-end" pr={8} pt={0.2} pb={0.2}>
             <PhoneInTalkIcon sx={{
                 fontSize: 20, paddingRight: 1, color: 'gray'

@@ -10,11 +10,12 @@ import Typography from '@mui/material/Typography';
 import {styled} from '@mui/styles';
 import {Table} from '@mui/material';
 import TableBody from '@mui/material/TableBody';
-import TableContainer from '@mui/material/TableContainer';
+import TableContainer, {tableContainerClasses} from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import TableCell, {tableCellClasses} from '@mui/material/TableCell';
+import rectangle from '../../images/rectangle.png';
 
 function createData(
     concepto,
@@ -48,51 +49,68 @@ const rows = [
 
 const StyledTableCell = styled(TableCell)(({theme}) => ({
     [`&.${tableCellClasses.head}`]: {
-        fontSize: 22, paddingBottom: 10
+        fontSize: 22, paddingBottom: 25, color: 'black', paddingTop: 25, letterSpacing: 1.5
     },
-    [`&.${tableCellClasses.body}`]: {fontSize: 18}
+    [`&.${tableCellClasses.body}`]: {fontSize: 15}
 }));
 
-const StyledTableRowHeader = styled(TableRow)(({theme}) => ({
-    '&:nth-of-type(odd)': {backgroundColor: theme.palette.action.hover},
-    // hide last border
-    '&:last-child td, &:last-child th': {border: 0},
-    '&:first-child td, &:first-child th': {border: 0}
-}));
+const StyledTableRowHeader = styled(TableRow)(({theme}) => ({'&:nth-of-type(odd)': {backgroundColor: theme.palette.action.hover}}));
 
-const StyledImageTableRow = styled(TableRow)(({theme}) => ({
-    '&:nth-of-type(odd)': {backgroundColor: theme.palette.action.hover},
-    // hide last border
-    '&:last-child td, &:last-child th': {border: 0},
-    '&:first-child td, &:first-child th': {border: 0}
+const TitleTypography = styled(Typography)(() => ({
+    fontSize: '1.4rem!important',
+    fontWeight: 'bold !important',
+    color: 'black',
+    letterSpacing: '1.2px'
 }));
 
 const ComisionesDesktop = () => (
 
-    <Grid container>
-        <TableContainer component={Paper}>
-            <Table
-                size="small"
-                aria-label="a dense table"
-            >
-                <TableHead>
-                    <StyledTableRowHeader>
-                        <StyledTableCell width="40%">COMISIONES POR OPERACIONES CONCEPTO</StyledTableCell>
-                        <StyledTableCell>ARANCEL</StyledTableCell>
-                    </StyledTableRowHeader>
-                </TableHead>
-                <TableBody>
-                    {rows.map(row => (
-                        <TableRow
-                            key={row.concepto}
-                        >
-                            <StyledTableCell>{row.concepto}</StyledTableCell>
-                            <StyledTableCell>{row.arancel}</StyledTableCell>
-                        </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
-        </TableContainer>
+    <Grid container direction="row" sx={{backgroundColor: '#e6e6e6'}} pt={1} pb={3}>
+        <Grid
+            container
+            direction="column"
+            sx={{backgroundColor: '#ffffff'}}
+        >
+            <Grid item md={2} pl={7} pt={1}>
+                <TitleTypography fontFamily="Arial">
+                    COMISIONES
+                </TitleTypography>
+            </Grid>
+            <Grid item md={2}>
+                <img
+                    src={rectangle}
+                    alt="rectangle"
+                    style={{
+                        width: '220px', height: '12px'
+                    }}
+                />
+            </Grid>
+        </Grid>
+        <Grid item md={8} pt={6} pl={10} pr={10} pb={7}>
+            <TableContainer component={Paper}>
+                <Table
+                    size="small"
+                    aria-label="a dense table"
+                >
+                    <TableHead>
+                        <StyledTableRowHeader>
+                            <StyledTableCell width="20%">COMISIONES POR OPERACIONES CONCEPTO</StyledTableCell>
+                            <StyledTableCell width="20%">ARANCEL</StyledTableCell>
+                        </StyledTableRowHeader>
+                    </TableHead>
+                    <TableBody>
+                        {rows.map(row => (
+                            <TableRow
+                                key={row.concepto}
+                            >
+                                <StyledTableCell>{row.concepto}</StyledTableCell>
+                                <StyledTableCell>{row.arancel}</StyledTableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </TableContainer>
+        </Grid>
     </Grid>
 );
 

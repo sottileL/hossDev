@@ -2,8 +2,8 @@ import React, {useRef} from 'react';
 import Grid from '@mui/material/Grid';
 
 import Header from '../../components/Header/Desktop';
-import Home from '../../components/Home/NosotrosDesktop';
 import Footer from '../../components/Footer/FooterDesktop';
+import Comisiones from '../../components/Comisiones/ComisionesDesktop';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import 'react-image-lightbox/style.css';
@@ -36,8 +36,8 @@ const Desktop = () => {
     return (
         <Grid direction="column" width="100%" id="inicio" ref={nosotrosRef}>
             <Header handleClickMenu={handleClickMenu}/>
-            <Grid item id="home" ref={nosotrosRef}>
-                <Home/>
+            <Grid item id="comisiones" ref={comisionesRef}>
+                <Comisiones/>
             </Grid>
             <Grid item id="footer">
                 <Footer/>
