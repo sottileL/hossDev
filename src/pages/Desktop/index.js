@@ -1,11 +1,7 @@
 import React, {useRef} from 'react';
 import Grid from '@mui/material/Grid';
+import {Link} from 'react-router-dom';
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route
-} from 'react-router-dom';
 import Header from '../../components/Header/Desktop';
 import Footer from '../../components/Footer/FooterDesktop';
 import Nosotros from '../../components/Nosotros/NosotrosDesktop';
@@ -41,36 +37,32 @@ const Desktop = () => {
     };
 
     return (
-        <Router>
-            <Grid direction="column" width="100%" id="inicio" ref={nosotrosRef}>
-                <Header handleClickMenu={handleClickMenu}/>
-                <Switch>
-                    <Route exact path="/">
-                        <Grid item id="nosotros">
-                            <Nosotros/>
-                        </Grid>
-                    </Route>
-                    <Route path="/comisiones">
-                        <Grid item id="comisiones">
-                            <Comisiones/>
-                        </Grid>
-                    </Route>
-                    <Route path="/resumen">
-                        <Grid item id="resumen">
-                            <Resumen/>
-                        </Grid>
-                    </Route>
-                    <Route path="/contacto">
-                        <Grid item id="contacto">
-                            <Contacto/>
-                        </Grid>
-                    </Route>
-                    <Grid item id="footer">
-                        <Footer/>
-                    </Grid>
-                </Switch>
+        <Grid direction="column" width="100%" id="inicio" ref={nosotrosRef}>
+            <Header handleClickMenu={handleClickMenu}/>
+            <Link to="nosotros">
+                <Grid item id="nosotros">
+                    <Nosotros/>
+                </Grid>
+            </Link>
+            <Link to="comisiones">
+                <Grid id="comisiones">
+                    <Comisiones/>
+                </Grid>
+            </Link>
+            <Link to="resumen">
+                <Grid item id="resumen">
+                    <Resumen/>
+                </Grid>
+            </Link>
+            <Link to="contacto">
+                <Grid item id="contacto">
+                    <Contacto/>
+                </Grid>
+            </Link>
+            <Grid item id="footer">
+                <Footer/>
             </Grid>
-        </Router>
+        </Grid>
     );
 };
 
