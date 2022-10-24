@@ -48,16 +48,16 @@ const HeaderDesktop = ({handleClickMenu}) => (
                 />
             </Grid>
             <Grid item md={9} direction="row" display="flex" alignItems="center" justifyContent="flex-end" pr={8} pt={1.5}>
-                <TitleNavbar component={Link} to="#nosotros" onClick={() => handleClickMenu('nosotros')}>
+                <TitleNavbar component={Link} to="/">
                     NOSOTROS
                 </TitleNavbar>
-                <TitleNavbar component={Link} to="#comisiones" onClick={() => handleClickMenu('comisiones')}>
+                <TitleNavbar component={Link} to="comisiones">
                     COMISIONES
                 </TitleNavbar>
-                <TitleNavbar component={Link} to="#resumencuenta" onClick={() => handleClickMenu('resumencuenta')}>
+                <TitleNavbar component={Link} to="resumen">
                     RESUMEN DE CUENTA
                 </TitleNavbar>
-                <TitleNavbar component={Link} to="#contacto" onClick={() => handleClickMenu('contacto')}>
+                <TitleNavbar component={Link} to="contacto">
                     CONTACTO
                 </TitleNavbar>
             </Grid>

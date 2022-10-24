@@ -1,6 +1,5 @@
 import React, {useRef} from 'react';
 import Grid from '@mui/material/Grid';
-import {Link} from 'react-router-dom';
 
 import Header from '../../components/Header/Desktop';
 import Footer from '../../components/Footer/FooterDesktop';
@@ -39,26 +38,18 @@ const Desktop = () => {
     return (
         <Grid direction="column" width="100%" id="inicio" ref={nosotrosRef}>
             <Header handleClickMenu={handleClickMenu}/>
-            <Link to="nosotros">
-                <Grid item id="nosotros">
-                    <Nosotros/>
-                </Grid>
-            </Link>
-            <Link to="comisiones">
-                <Grid id="comisiones">
-                    <Comisiones/>
-                </Grid>
-            </Link>
-            <Link to="resumen">
-                <Grid item id="resumen">
-                    <Resumen/>
-                </Grid>
-            </Link>
-            <Link to="contacto">
-                <Grid item id="contacto">
-                    <Contacto/>
-                </Grid>
-            </Link>
+            <Grid item id="nosotros">
+                <Nosotros/>
+            </Grid>
+            <Grid id="comisiones">
+                <Comisiones/>
+            </Grid>
+            <Grid item id="resumen">
+                <Resumen/>
+            </Grid>
+            <Grid item id="contacto">
+                <Contacto/>
+            </Grid>
             <Grid item id="footer">
                 <Footer/>
             </Grid>
