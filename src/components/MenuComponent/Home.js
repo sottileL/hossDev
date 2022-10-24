@@ -12,7 +12,7 @@ import Logo from '../../images/logo.png';
 const Home = ({handleClickMenu}) => (
     <Grid container direction="column">
         <Grid item md={2} sx={{backgroundColor: '#ffffff'}} display="flex" justifyContent="flex-end" pr={20}>
-            <Typography fontFamily="Arial" fontWeight="light" fontSize={15}>
+            <Typography fontWeight="light" fontSize={15}>
                 341
             </Typography>
         </Grid>

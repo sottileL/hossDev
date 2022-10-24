@@ -13,6 +13,10 @@ const TitleTypography = styled(Typography)(() => ({
     letterSpacing: '1.2px'
 }));
 
+const openInNewTab = url => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+};
+
 const ResumenDesktop = () => (
     <Router>
         <Grid container direction="column" sx={{backgroundColor: '#e6e6e6'}} pt={1} pb={3}>
@@ -23,7 +27,7 @@ const ResumenDesktop = () => (
                 md={12}
             >
                 <Grid item md={2} pl={7} pt={1}>
-                    <TitleTypography fontFamily="Arial">
+                    <TitleTypography>
                         RESUMEN DE CUENTA
                     </TitleTypography>
                 </Grid>
@@ -39,7 +43,7 @@ const ResumenDesktop = () => (
                 <Grid item md={5}/>
             </Grid>
             <Grid item display="flex" justifyContent="center" kmd={5} pt={5} pb={8}>
-                <Link to="/about/">
+                <Link to="/" onClick={() => openInNewTab('https://www.youtube.com/watch?v=RvhMXIV28XE')}>
                     <img
                         src={resumen}
                         alt="resumen"

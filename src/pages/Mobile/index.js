@@ -225,10 +225,10 @@ const Mobile = () => {
                     </Grid>
                     <Grid item mt={2} xs={12} display="flex" justifyContent="center" alignItems="center">
                         <Box>
-                            <Typography fontFamily="Arial" color="white" fontWeight="bold" fontSize={15} textAlign="center">
+                            <Typography color="white" fontWeight="bold" fontSize={15} textAlign="center">
                                 CONTACTO:
                             </Typography>
-                            <Typography fontFamily="Arial" color="white" fontSize={13}>
+                            <Typography color="white" fontSize={13}>
                                 <Grid container direction="column" mt={1} mb={2}>
                                     <Grid container direction="row" justifyContent="flex-start" alignItems="center">
                                         <Grid item mr={1}>

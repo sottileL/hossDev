@@ -15,6 +15,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import TableCell, {tableCellClasses} from '@mui/material/TableCell';
+import {BorderBottom} from '@mui/icons-material';
+import {borders} from '@mui/system';
 import rectangle from '../../images/rectangle.png';
 
 function createData(
@@ -49,9 +51,17 @@ const rows = [
 
 const StyledTableCell = styled(TableCell)(({theme}) => ({
     [`&.${tableCellClasses.head}`]: {
-        fontSize: 22, paddingBottom: 25, color: 'black', paddingTop: 25, letterSpacing: 1.5
+        fontSize: 20,
+        paddingBottom: 14,
+        color: 'black',
+        paddingTop: 25,
+        letterSpacing: 1.2,
+        paddingLeft: 30,
+        borderBottom: '4px solid #6996ab'
     },
-    [`&.${tableCellClasses.body}`]: {fontSize: 15}
+    [`&.${tableCellClasses.body}`]: {
+        fontSize: 15, paddingLeft: 30, padding: '3px'
+    }
 }));
 
 const StyledTableRowHeader = styled(TableRow)(({theme}) => ({'&:nth-of-type(odd)': {backgroundColor: theme.palette.action.hover}}));
@@ -72,7 +82,7 @@ const ComisionesDesktop = () => (
             sx={{backgroundColor: '#ffffff'}}
         >
             <Grid item md={2} pl={7} pt={1}>
-                <TitleTypography fontFamily="Arial">
+                <TitleTypography>
                     COMISIONES
                 </TitleTypography>
             </Grid>
@@ -86,30 +96,32 @@ const ComisionesDesktop = () => (
                 />
             </Grid>
         </Grid>
-        <Grid item md={8} pt={6} pl={10} pr={10} pb={7}>
-            <TableContainer component={Paper}>
-                <Table
-                    size="small"
-                    aria-label="a dense table"
-                >
-                    <TableHead>
-                        <StyledTableRowHeader>
-                            <StyledTableCell width="20%">COMISIONES POR OPERACIONES CONCEPTO</StyledTableCell>
-                            <StyledTableCell width="20%">ARANCEL</StyledTableCell>
-                        </StyledTableRowHeader>
-                    </TableHead>
-                    <TableBody>
-                        {rows.map(row => (
-                            <TableRow
-                                key={row.concepto}
-                            >
-                                <StyledTableCell>{row.concepto}</StyledTableCell>
-                                <StyledTableCell>{row.arancel}</StyledTableCell>
-                            </TableRow>
-                        ))}
-                    </TableBody>
-                </Table>
-            </TableContainer>
+        <Grid container direction="row" md={12} display="flex" justifyContent="center">
+            <Grid item md={6} pt={6} pb={7}>
+                <TableContainer component={Paper}>
+                    <Table
+                        size="small"
+                        aria-label="a dense table"
+                    >
+                        <TableHead>
+                            <StyledTableRowHeader>
+                                <StyledTableCell width="50%">COMISIONES POR OPERACIONES CONCEPTO</StyledTableCell>
+                                <StyledTableCell width="20%">ARANCEL</StyledTableCell>
+                            </StyledTableRowHeader>
+                        </TableHead>
+                        <TableBody>
+                            {rows.map(row => (
+                                <TableRow
+                                    key={row.concepto}
+                                >
+                                    <StyledTableCell>{row.concepto}</StyledTableCell>
+                                    <StyledTableCell>{row.arancel}</StyledTableCell>
+                                </TableRow>
+                            ))}
+                        </TableBody>
+                    </Table>
+                </TableContainer>
+            </Grid>
         </Grid>
     </Grid>
 );

@@ -33,7 +33,7 @@ const NosotrosDesktop = () => (
             sx={{backgroundColor: '#ffffff'}}
         >
             <Grid item xs={2} pl={7} pt={1}>
-                <TitleTypography fontFamily="Arial">
+                <TitleTypography>
                     NOSOTROS
                 </TitleTypography>
             </Grid>
