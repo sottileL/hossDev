@@ -27,7 +27,7 @@ const ResumenDesktop = () => (
                 md={12}
             >
                 <Grid item md={2} pl={7} pt={1}>
-                    <TitleTypography>
+                    <TitleTypography fontFamily="Arial">
                         RESUMEN DE CUENTA
                     </TitleTypography>
                 </Grid>
@@ -43,7 +43,7 @@ const ResumenDesktop = () => (
                 <Grid item md={5}/>
             </Grid>
             <Grid item display="flex" justifyContent="center" kmd={5} pt={5} pb={8}>
-                <Link to="/" onClick={() => openInNewTab('https://www.youtube.com/watch?v=RvhMXIV28XE')}>
+                <Link to="" onClick={() => openInNewTab('https://www.youtube.com/watch?v=RvhMXIV28XE')}>
                     <img
                         src={resumen}
                         alt="resumen"
