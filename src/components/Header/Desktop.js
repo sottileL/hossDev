@@ -20,7 +20,7 @@ const TitleNavbar = styled(Typography)(() => ({
 
 const SubtitleTypography = styled(Typography)(() => ({
     fontSize: '1.2',
-    fontWeight: 'light',
+    fontWeight: 'medium',
     color: 'gray',
     letterSpacing: '0.6px'
 }));
@@ -33,7 +33,7 @@ const HeaderDesktop = ({handleClickMenu}) => (
             }}
             />
             <SubtitleTypography fontSize={15}>
-                341-6061189- atencionalcliente@hoss.com.ar
+                341-6061189 - atencionalcliente@hoss.com.ar
             </SubtitleTypography>
         </Grid>
         <Grid container direction="row" pb={2} sx={{backgroundColor: '#282a37'}}>
