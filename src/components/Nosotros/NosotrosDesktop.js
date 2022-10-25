@@ -20,7 +20,7 @@ const TitleTypography = styled(Typography)(() => ({
 
 const SubtitleTypography = styled(Typography)(() => ({
     fontSize: '1.1rem!important',
-    fontWeight: 'light',
+    fontWeight: 'lighter !important',
     color: 'black',
     letterSpacing: '0.5px'
 }));
@@ -79,7 +79,7 @@ const NosotrosDesktop = () => (
                 </SubtitleTypography>
             </Grid>
             <Grid item md={5} pt={5} >
-                <SubtitleTypography fontWeight="bold">
+                <SubtitleTypography fontWeight="bolder!important">
                     Agente de negociación
                     <br/>
                 </SubtitleTypography>

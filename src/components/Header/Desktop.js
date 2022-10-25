@@ -14,7 +14,6 @@ const TitleNavbar = styled(Typography)(() => ({
     fontSize: '1.2rem!important',
     fontWeight: 'medium !important',
     color: 'white',
-    paddingLeft: '20px',
     letterSpacing: '0px',
     textDecoration: 'none'
 }));
@@ -28,7 +27,7 @@ const SubtitleTypography = styled(Typography)(() => ({
 
 const HeaderDesktop = ({handleClickMenu}) => (
     <Grid container direction="column" sx={{backgroundColor: '#e6e6e6'}} pb={2}>
-        <Grid item display="flex" justifyContent="flex-end" pr={8} pt={0.2} pb={0.2}>
+        <Grid item display="flex" justifyContent="flex-end" pr={4} pt={0.2} pb={0.2}>
             <PhoneInTalkIcon sx={{
                 fontSize: 20, paddingRight: 1, color: 'gray'
             }}
@@ -38,7 +37,7 @@ const HeaderDesktop = ({handleClickMenu}) => (
             </SubtitleTypography>
         </Grid>
         <Grid container direction="row" pb={2} sx={{backgroundColor: '#282a37'}}>
-            <Grid item md={3} pl={7} pt={3} pb={0.5}>
+            <Grid item md={8} pl={8} pt={3} pb={0.5}>
                 <img
                     src={Logo}
                     alt="logo"
@@ -47,19 +46,27 @@ const HeaderDesktop = ({handleClickMenu}) => (
                     }}
                 />
             </Grid>
-            <Grid item md={9} direction="row" display="flex" alignItems="center" justifyContent="flex-end" pr={8} pt={1.5}>
-                <TitleNavbar component={Link} to="/">
-                    NOSOTROS
-                </TitleNavbar>
-                <TitleNavbar component={Link} to="comisiones">
-                    COMISIONES
-                </TitleNavbar>
-                <TitleNavbar component={Link} to="resumen">
-                    RESUMEN DE CUENTA
-                </TitleNavbar>
-                <TitleNavbar component={Link} to="contacto">
-                    CONTACTO
-                </TitleNavbar>
+            <Grid container direction="row" md={4} spacing={2.5} pt={1}>
+                <Grid item display="flex" alignItems="center" justifyContent="flex-end">
+                    <TitleNavbar component={Link} to="/">
+                        NOSOTROS
+                    </TitleNavbar>
+                </Grid>
+                <Grid item display="flex" alignItems="center" justifyContent="flex-end">
+                    <TitleNavbar component={Link} to="comisiones">
+                        COMISIONES
+                    </TitleNavbar>
+                </Grid>
+                <Grid item display="flex" alignItems="center" justifyContent="flex-end">
+                    <TitleNavbar component={Link} to="resumen">
+                        RESUMEN DE CUENTA
+                    </TitleNavbar>
+                </Grid>
+                <Grid item display="flex" alignItems="center" justifyContent="flex-end">
+                    <TitleNavbar component={Link} to="contacto">
+                        CONTACTO
+                    </TitleNavbar>
+                </Grid>
             </Grid>
         </Grid>
     </Grid>

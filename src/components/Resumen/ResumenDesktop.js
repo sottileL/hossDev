@@ -19,7 +19,7 @@ const openInNewTab = url => {
 
 const ResumenDesktop = () => (
     <Router>
-        <Grid container direction="column" sx={{backgroundColor: '#e6e6e6'}} pt={1} pb={3}>
+        <Grid container direction="column" sx={{backgroundColor: '#e6e6e6'}} pt={1} pb={15}>
             <Grid
                 container
                 direction="column"
@@ -42,7 +42,7 @@ const ResumenDesktop = () => (
                 </Grid>
                 <Grid item md={5}/>
             </Grid>
-            <Grid item display="flex" justifyContent="center" kmd={5} pt={5} pb={8}>
+            <Grid item display="flex" justifyContent="center" md={5} pt={10} pb={8}>
                 <Link to="" onClick={() => openInNewTab('https://www.youtube.com/watch?v=RvhMXIV28XE')}>
                     <img
                         src={resumen}

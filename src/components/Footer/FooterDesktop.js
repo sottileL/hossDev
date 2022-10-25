@@ -13,7 +13,7 @@ import logo from '../../images/logo.png';
 
 const FooterTypography = styled(Typography)(() => ({
     fontSize: '1.0',
-    fontWeight: 'light !important',
+    fontWeight: 'lighter !important',
     color: 'white',
     letterSpacing: '0.6px'
 }));
@@ -29,7 +29,7 @@ const FooterDesktop = () => (
             />
         </Grid>
         <Grid container direction="column" sx={{backgroundColor: '#e6e6e6'}} pt={2}>
-            <Grid container direction="row" backgroundColor="#282a37" pb={10} pt={5}>
+            <Grid container direction="row" backgroundColor="#282a37" pb={12} pt={8}>
                 <Grid container direction="column" md={5} spacing={3} display="flex" pl={7} pt={2}>
                     <Grid item xs={2}>
                         <img
@@ -53,7 +53,7 @@ const FooterDesktop = () => (
                     </Grid>
                 </Grid>
                 <Grid item md={6} pt={9}>
-                    <FooterTypography fontWeight="bold">
+                    <FooterTypography fontWeight="bolder!important">
                         CONTACTO
                         <br/>
                         <br/>
@@ -67,7 +67,7 @@ const FooterDesktop = () => (
                     </FooterTypography>
                 </Grid>
             </Grid>
-            <Grid item md={1} pt={5} sx={{backgroundColor: '#555763'}}/>
+            <Grid item pb={6} sx={{backgroundColor: '#555763'}}/>
         </Grid>
     </Grid>
 );
