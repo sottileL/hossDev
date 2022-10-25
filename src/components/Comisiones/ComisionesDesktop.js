@@ -15,7 +15,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import TableCell, {tableCellClasses} from '@mui/material/TableCell';
-import {BorderBottom} from '@mui/icons-material';
+import {BorderBottom, BorderTop} from '@mui/icons-material';
 import {borders} from '@mui/system';
 import rectangle from '../../images/rectangle.png';
 
@@ -60,7 +60,10 @@ const StyledTableCell = styled(TableCell)(({theme}) => ({
         borderBottom: '4px solid #6996ab'
     },
     [`&.${tableCellClasses.body}`]: {
-        fontSize: 15, paddingLeft: 30, padding: '3px'
+        fontSize: 15,
+        paddingLeft: 30,
+        padding: '3px',
+        borderBottom: '2px solid gray'
     }
 }));
 
