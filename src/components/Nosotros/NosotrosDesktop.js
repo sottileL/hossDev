@@ -78,7 +78,7 @@ const NosotrosDesktop = () => (
                     toda la sociedad.
                 </SubtitleTypography>
             </Grid>
-            <Grid item md={6} pt={5} pl={1}>
+            <Grid item md={6} pt={5} pl={1.3}>
                 <SubtitleTypography fontWeight="bolder!important">
                     Agente de negociación
                     <br/>
