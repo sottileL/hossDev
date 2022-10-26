@@ -49,8 +49,13 @@ const ContactoDesktop = () => (
                 />
             </Grid>
         </Grid>
-        <Grid container direction="row" display="flex" justifyContent="flex-end" md={4} pt={4}>
-            <Grid item sx={{backgroundColor: '#282a37'}} pb={4} pl={4} pt={2} pr={30}>
+        <Grid container direction="row" display="flex" justifyContent="flex-start" md={12} pt={4}>
+            <Grid
+                item
+                md={1}
+                sx={{backgroundColor: '#fff'}}
+            />
+            <Grid item md={5} sx={{backgroundColor: '#282a37'}} pb={4} pl={4} pt={2}>
                 <ContactTypography>
                     <LocationOnOutlinedIcon sx={{
                         fontSize: 25, paddingRight: 1, color: '#72a5b3'

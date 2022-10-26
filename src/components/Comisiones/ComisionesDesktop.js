@@ -100,7 +100,7 @@ const ComisionesDesktop = () => (
             </Grid>
         </Grid>
         <Grid container direction="row" md={12} display="flex" justifyContent="center">
-            <Grid item md={6} pt={6} pb={7}>
+            <Grid item md={10} pt={6} pb={7}>
                 <TableContainer component={Paper}>
                     <Table
                         size="small"

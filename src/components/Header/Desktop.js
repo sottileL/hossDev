@@ -37,7 +37,7 @@ const HeaderDesktop = ({handleClickMenu}) => (
             </SubtitleTypography>
         </Grid>
         <Grid container direction="row" pb={2} sx={{backgroundColor: '#282a37'}}>
-            <Grid item md={3} pl={8} pt={3} pb={0.5}>
+            <Grid item md={3} pl={7} pt={3} pb={0.5}>
                 <img
                     src={Logo}
                     alt="logo"
