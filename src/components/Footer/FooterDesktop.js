@@ -30,8 +30,8 @@ const FooterDesktop = () => (
         </Grid>
         <Grid container direction="column" sx={{backgroundColor: '#e6e6e6'}} pt={2}>
             <Grid container direction="row" backgroundColor="#282a37" pb={12} pt={8}>
-                <Grid container direction="column" md={5} spacing={3} display="flex" pl={7} pt={2}>
-                    <Grid item xs={2}>
+                <Grid container direction="column" md={6} display="flex" pl={7} pt={2}>
+                    <Grid item md={2} pb={3}>
                         <img
                             src={logo}
                             alt="logo"

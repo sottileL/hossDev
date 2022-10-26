@@ -48,7 +48,7 @@ const NosotrosDesktop = () => (
             </Grid>
         </Grid>
         <Grid container direction="column" xs={6}>
-            <Grid item pl={7} pt={8}>
+            <Grid item pt={8} pl={7}>
                 <img
                     src={darklogo}
                     alt="darklogo"
@@ -58,8 +58,8 @@ const NosotrosDesktop = () => (
                 />
             </Grid>
         </Grid>
-        <Grid container direction="row" md={10} justifyContent="center" width="80%" pl={7} pt={7} pb={8}>
-            <Grid item md={5}>
+        <Grid container direction="row" md={10} justifyContent="center" width="80%" pt={7} pb={8}>
+            <Grid item md={6} pl={7}>
                 <TitleTypography>
                     HOSS INVERSIONES
                 </TitleTypography>
@@ -78,7 +78,7 @@ const NosotrosDesktop = () => (
                     toda la sociedad.
                 </SubtitleTypography>
             </Grid>
-            <Grid item md={5} pt={5} >
+            <Grid item md={6} pt={5} pl={1}>
                 <SubtitleTypography fontWeight="bolder!important">
                     Agente de negociación
                     <br/>
@@ -91,7 +91,6 @@ const NosotrosDesktop = () => (
                     Matba Rofex - Matrícula Nº 902
                 </SubtitleTypography>
             </Grid>
-            <Grid item md={2}/>
         </Grid>
     </Grid>
 );
