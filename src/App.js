@@ -4,12 +4,12 @@ import './App.css';
 import './fonts/FSEmeric/stylesheet.css';
 import ThemeProvider from './theme/ThemeProvider';
 import {LightTheme} from './theme/theme';
-import Header from './components/Header/Desktop';
-import Footer from './components/Footer/FooterDesktop';
-import Nosotros from './components/Nosotros/NosotrosDesktop';
+import Header from './components/Header/Mobile';
+import Footer from './components/Footer/FooterMobile';
+import Nosotros from './components/Nosotros/NosotrosMobile';
 import Comisiones from './components/Comisiones/ComisionesDesktop';
 import Resumen from './components/Resumen/ResumenDesktop';
-import Contacto from './components/Contacto/ContactoDesktop';
+import Contacto from './components/ContactForm/Mobile';
 
 const App = () => (
     <ThemeProvider theme={LightTheme}>

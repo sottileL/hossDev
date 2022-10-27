@@ -20,22 +20,22 @@ const TitleNavbar = styled(Typography)(() => ({
 }));
 
 const HeaderMobile = ({handleClickMenu}) => (
-    <Grid container direction="row" py={4} alignItems="center" justifyContent="center">
-        <Grid item xs={4} pl={5}>
+    <Grid container direction="row" py={2} alignItems="center" sx={{backgroundColor: '#282a37'}} justifyContent="center">
+        <Grid item xs={4} pl={2}>
             <Menu
                 _id="menu"
                 menuActions={[
                     {
-                        label: 'Inicio',
-                        onClick: () => handleClickMenu('inicio')
-                    },
-                    {
-                        label: 'Marcas',
-                        onClick: () => handleClickMenu('marcas')
-                    },
-                    {
                         label: 'Nosotros',
                         onClick: () => handleClickMenu('nosotros')
+                    },
+                    {
+                        label: 'Comisiones',
+                        onClick: () => handleClickMenu('comisiones')
+                    },
+                    {
+                        label: 'Resumen',
+                        onClick: () => handleClickMenu('resumen')
                     },
                     {
                         label: 'Contacto',
@@ -49,7 +49,7 @@ const HeaderMobile = ({handleClickMenu}) => (
                 src={logo}
                 alt="logo"
                 style={{
-                    width: 'auto', height: '85px'
+                    width: 'auto', height: '45px'
                 }}
             />
         </Grid>
