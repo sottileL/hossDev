@@ -48,26 +48,26 @@ const Mobile = () => {
     const [photoIndex, setPhotoIndex] = useState(0);
     const [isOpen, setIsOpen] = useState(false);
 
-    const inicioRef = useRef(null);
-    const marcasRef = useRef(null);
     const nosotrosRef = useRef(null);
+    const comisionesRef = useRef(null);
+    const resumenRef = useRef(null);
     const contactoRef = useRef(null);
 
     const handleClickMenu = section => {
-        if (section === 'inicio') {
-            scrollIntoView(inicioRef.current, {
-                behavior: 'smooth', block: 'start', inline: 'center'
-            });
-        }
-
-        if (section === 'marcas') {
-            scrollIntoView(marcasRef.current, {
-                behavior: 'smooth', block: 'start', inline: 'center'
-            });
-        }
-
         if (section === 'nosotros') {
             scrollIntoView(nosotrosRef.current, {
+                behavior: 'smooth', block: 'start', inline: 'center'
+            });
+        }
+
+        if (section === 'comisiones') {
+            scrollIntoView(comisionesRef.current, {
+                behavior: 'comisiones', block: 'start', inline: 'center'
+            });
+        }
+
+        if (section === 'resumen') {
+            scrollIntoView(resumenRef.current, {
                 behavior: 'smooth', block: 'start', inline: 'center'
             });
         }
@@ -80,7 +80,7 @@ const Mobile = () => {
     };
 
     return (
-        <Grid direction="column" width="100%" id="inicio" ref={inicioRef}>
+        <Grid direction="column" width="100%" id="inicio" ref={nosotrosRef}>
             <Header handleClickMenu={handleClickMenu}/>
             <Grid item>
                 <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false}>
