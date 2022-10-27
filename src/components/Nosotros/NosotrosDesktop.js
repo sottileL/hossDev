@@ -12,10 +12,10 @@ import rectangle from '../../images/rectangle.png';
 import darklogo from '../../images/darklogo.png';
 
 const TitleTypography = styled(Typography)(() => ({
-    fontSize: '1.4rem!important',
+    fontSize: '1.5rem!important',
     fontWeight: 'bold !important',
     color: 'black',
-    letterSpacing: '1.2px'
+    letterSpacing: '1px'
 }));
 
 const SubtitleTypography = styled(Typography)(() => ({
@@ -47,49 +47,52 @@ const NosotrosDesktop = () => (
                 />
             </Grid>
         </Grid>
-        <Grid container direction="column" xs={6}>
-            <Grid item pt={8} pl={7}>
+        <Grid container direction="column">
+            <Grid item pt={10} display="flex" justifyContent="center">
                 <img
                     src={darklogo}
                     alt="darklogo"
                     style={{
-                        width: 'auto', height: '150px'
+                        width: 'auto', height: '130px'
                     }}
                 />
             </Grid>
         </Grid>
-        <Grid container direction="row" md={10} justifyContent="center" width="80%" pt={7} pb={8}>
-            <Grid item md={6} pl={7}>
-                <TitleTypography>
-                    HOSS INVERSIONES
-                </TitleTypography>
-                <SubtitleTypography>
-                    <br/>
-                    Somos un agente de inversiones y
-                    <br/>
-                    construimos nuestro trabajo de manera
-                    <br/>
-                    tecnológica, transparente seria y ágil.
-                    <br/>
-                    La educación en el ámbito financiero
-                    <br/>
-                    nos parece fundamentel para incluir a
-                    <br/>
-                    toda la sociedad.
-                </SubtitleTypography>
+        <Grid container direction="column" pt={6}>
+            <Grid container direction="column" sx={{backgroundColor: '#dadada'}} pt={3} pb={2}>
+                <Grid item textAlign="center">
+                    <TitleTypography>
+                        HOSS INVERSIONES
+                    </TitleTypography>
+                </Grid>
+                <Grid item textAlign="center" pb={2}>
+                    <SubtitleTypography>
+                        Somos un agente de inversiones y construimos nuestro trabajo
+                        <br/>
+                        de manera tecnológica, transparente seria y ágil.
+                        <br/>
+                        La educación en el ámbito financiero nos parece fundamental
+                        <br/>
+                        para incluir a toda la sociedad.
+                    </SubtitleTypography>
+                </Grid>
             </Grid>
-            <Grid item md={6} pt={5} pl={1.3}>
-                <SubtitleTypography fontWeight="bolder!important">
-                    Agente de negociación
-                    <br/>
-                </SubtitleTypography>
-                <SubtitleTypography>
-                    Mercado registrado ante C.N.V - Matrícula Nº 1097
-                    <br/>
-                    Mercado argentino de valores - Matrícula Nº 765
-                    <br/>
-                    Matba Rofex - Matrícula Nº 902
-                </SubtitleTypography>
+            <Grid container direction="column" pt={3} pb={3}>
+                <Grid item textAlign="center">
+                    <SubtitleTypography fontWeight="bolder!important">
+                        Agente de negociación
+                        <br/>
+                    </SubtitleTypography>
+                </Grid>
+                <Grid item textAlign="center">
+                    <SubtitleTypography>
+                        Mercado registrado ante C.N.V - Matrícula Nº 1097
+                        <br/>
+                        Mercado argentino de valores - Matrícula Nº 765
+                        <br/>
+                        Matba Rofex - Matrícula Nº 902
+                    </SubtitleTypography>
+                </Grid>
             </Grid>
         </Grid>
     </Grid>

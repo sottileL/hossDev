@@ -22,7 +22,7 @@ const ContactTypography = styled(Typography)(() => ({
 
 const SubtitleTypography = styled(Typography)(() => ({
     fontSize: '1.2',
-    fontWeight: 'light',
+    fontWeight: 'lighter !important',
     color: 'lightgray',
     letterSpacing: '0.6px'
 }));
@@ -49,13 +49,8 @@ const ContactoDesktop = () => (
                 />
             </Grid>
         </Grid>
-        <Grid container direction="row" display="flex" justifyContent="flex-start" md={12} pt={4}>
-            <Grid
-                item
-                md={1}
-                sx={{backgroundColor: '#fff'}}
-            />
-            <Grid item md={5} sx={{backgroundColor: '#282a37'}} pb={4} pl={4} pt={2}>
+        <Grid container direction="row" display="flex" justifyContent="center" pt={4} pb={3}>
+            <Grid item md={5} textAlign="center" sx={{backgroundColor: '#282a37'}} pb={4} pt={2}>
                 <ContactTypography>
                     <LocationOnOutlinedIcon sx={{
                         fontSize: 25, paddingRight: 1, color: '#72a5b3'
@@ -66,7 +61,6 @@ const ContactoDesktop = () => (
                 </ContactTypography>
                 <SubtitleTypography>
                     Paraguay 777 piso 10b
-                    <br/>
                     <br/>
                     <br/>
                     <br/>
@@ -81,7 +75,6 @@ const ContactoDesktop = () => (
                 </ContactTypography>
                 <SubtitleTypography>
                     340160601189
-                    <br/>
                     <br/>
                     <br/>
                     <br/>

@@ -20,7 +20,7 @@ import ContactForm from '../../components/ContactForm/Mobile';
 import Header from '../../components/Header/Mobile';
 
 import Banner1 from '../../images/banner-mobile-1.webp';
-import Banner2 from '../../images/banner-mobile-2.webp';
+import Banner2 from '../../images/banner-mobile-2.webp';/*  */
 import FirstBlock from '../../images/cuadros/cuadro-1.webp';
 import Nosotros from '../../images/nosotros.webp';
 import SecondBlock from '../../images/cuadros/cuadro-2.webp';
