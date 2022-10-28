@@ -7,6 +7,7 @@ import {styled} from '@mui/styles';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 
 import Logo from '../../images/logo.png';
 
@@ -33,7 +34,14 @@ const HeaderDesktop = ({handleClickMenu}) => (
             }}
             />
             <SubtitleTypography fontSize={15}>
-                341-6061189 - atencionalcliente@hoss.com.ar
+                341-6061189 -
+            </SubtitleTypography>
+            <EmailOutlinedIcon sx={{
+                fontSize: 20, paddingRight: 1, paddingLeft: 1, color: 'gray'
+            }}
+            />
+            <SubtitleTypography fontSize={15}>
+                atencionalcliente@hoss.com.ar
             </SubtitleTypography>
         </Grid>
         <Grid container direction="row" pb={2} sx={{backgroundColor: '#282a37'}}>

@@ -8,6 +8,7 @@ import Footer from './components/Footer/FooterMobile';
 import Nosotros from './components/Nosotros/NosotrosMobile';
 import Comisiones from './components/Comisiones/ComisionesMobile';
 import Resumen from './components/Resumen/ResumenMobile';
+import Contacto from './components/Contacto/ContactoMobile';
 
 const App = () => (
     <ThemeProvider theme={LightTheme}>
@@ -15,8 +16,8 @@ const App = () => (
         <Nosotros/>
         <Comisiones/>
         <Resumen/>
+        <Contacto/>
         <Footer/>
     </ThemeProvider>
 );
-
 export default App;
