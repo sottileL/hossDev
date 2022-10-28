@@ -24,9 +24,9 @@ const ResumenDesktop = () => (
                 container
                 direction="column"
                 sx={{backgroundColor: '#ffffff'}}
-                md={12}
+                xs={12}
             >
-                <Grid item md={2} pl={7} pt={1}>
+                <Grid item xs={2} pl={7} pt={1}>
                     <TitleTypography fontFamily="Arial">
                         RESUMEN DE CUENTA
                     </TitleTypography>
@@ -48,7 +48,7 @@ const ResumenDesktop = () => (
                         src={resumen}
                         alt="resumen"
                         style={{
-                            width: 'auto', height: '60px', justifyContent: 'center'
+                            width: 'auto', height: '0px', justifyContent: 'center'
                         }}
                     />
                 </Link>

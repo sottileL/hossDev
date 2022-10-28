@@ -109,7 +109,7 @@ const Mobile = () => {
                     DESTINO AL QUE LA GENTE QUIERE VOLVER
                 </SubtitleTypography>
             </Grid>
-            <Grid item id="marcas" ref={marcasRef}/>
+            <Grid item id="marcas"/>
             {isOpen && (
                 <Lightbox
                     mainSrc={images[photoIndex]}
