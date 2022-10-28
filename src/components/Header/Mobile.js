@@ -36,7 +36,7 @@ const HeaderMobile = ({handleClickMenu}) => (
                 fontSize: 20, paddingRight: 1, color: 'gray'
             }}
             />
-            <SubtitleTypography fontSize={15}>
+            <SubtitleTypography>
                 341-6061189
             </SubtitleTypography>
             <EmailOutlinedIcon sx={{
