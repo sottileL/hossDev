@@ -30,7 +30,9 @@ const NosotrosDesktop = () => (
         <Grid
             container
             direction="column"
-            sx={{backgroundColor: '#ffffff'}}
+            sx={{
+                backgroundColor: '#ffffff', position: 'relative'
+            }}
         >
             <Grid item xs={2} pl={7} pt={1}>
                 <TitleTypography>
@@ -42,7 +44,7 @@ const NosotrosDesktop = () => (
                     src={rectangle}
                     alt="rectangle"
                     style={{
-                        width: '220px', height: '12px'
+                        width: '220px', height: '12px', position: 'absolute', left: 0, bottom: -10
                     }}
                 />
             </Grid>
