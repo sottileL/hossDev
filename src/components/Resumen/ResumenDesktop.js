@@ -9,8 +9,7 @@ import resumen from '../../images/resumen.png';
 const TitleTypography = styled(Typography)(() => ({
     fontSize: '1.4rem!important',
     fontWeight: 'bold !important',
-    color: 'black',
-    letterSpacing: '1.2px'
+    color: 'black'
 }));
 
 const openInNewTab = url => {
@@ -19,14 +18,16 @@ const openInNewTab = url => {
 
 const ResumenDesktop = () => (
     <Router>
-        <Grid container direction="column" sx={{backgroundColor: '#e6e6e6'}} pt={1} pb={15}>
+        <Grid container direction="column" sx={{backgroundColor: '#e6e6e6'}}>
             <Grid
                 container
                 direction="column"
-                sx={{backgroundColor: '#ffffff'}}
-                xs={12}
+                sx={{
+                    backgroundColor: '#ffffff', position: 'relative'
+                }}
+                md={12}
             >
-                <Grid item xs={2} pl={7} pt={1}>
+                <Grid item xs={2} pl={7} pt={1} pb={1}>
                     <TitleTypography fontFamily="Arial">
                         RESUMEN DE CUENTA
                     </TitleTypography>
@@ -36,7 +37,7 @@ const ResumenDesktop = () => (
                         src={rectangle}
                         alt="rectangle"
                         style={{
-                            width: '220px', height: '12px'
+                            width: '220px', height: '12px', position: 'absolute', left: 0, bottom: -10
                         }}
                     />
                 </Grid>

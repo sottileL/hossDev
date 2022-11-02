@@ -12,10 +12,9 @@ import rectangle from '../../images/rectangle.png';
 import darklogo from '../../images/darklogo.png';
 
 const TitleTypography = styled(Typography)(() => ({
-    fontSize: '1.5rem!important',
+    fontSize: '1.4rem!important',
     fontWeight: 'bold !important',
-    color: 'black',
-    letterSpacing: '1px'
+    color: 'black'
 }));
 
 const SubtitleTypography = styled(Typography)(() => ({
@@ -34,7 +33,7 @@ const NosotrosDesktop = () => (
                 backgroundColor: '#ffffff', position: 'relative'
             }}
         >
-            <Grid item xs={2} pl={7} pt={1}>
+            <Grid item xs={2} pl={7} pt={1} pb={1}>
                 <TitleTypography>
                     NOSOTROS
                 </TitleTypography>

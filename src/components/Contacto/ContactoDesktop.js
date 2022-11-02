@@ -28,13 +28,15 @@ const SubtitleTypography = styled(Typography)(() => ({
 }));
 
 const ContactoDesktop = () => (
-    <Grid container direction="column" sx={{backgroundColor: '#e6e6e6'}} md={12} pt={1} pb={5}>
+    <Grid container direction="column" sx={{backgroundColor: '#e6e6e6'}} md={12}>
         <Grid
             container
             direction="column"
-            sx={{backgroundColor: '#ffffff'}}
+            sx={{
+                backgroundColor: '#ffffff', position: 'relative'
+            }}
         >
-            <Grid item md={2} pl={7} pt={1}>
+            <Grid item md={2} pl={7} pt={1} pb={1}>
                 <TitleTypography>
                     CONTACTO
                 </TitleTypography>
@@ -44,7 +46,7 @@ const ContactoDesktop = () => (
                     src={rectangle}
                     alt="rectangle"
                     style={{
-                        width: '220px', height: '12px'
+                        width: '220px', height: '12px', position: 'absolute', left: 0, bottom: -10
                     }}
                 />
             </Grid>
