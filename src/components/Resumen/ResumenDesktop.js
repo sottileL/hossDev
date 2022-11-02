@@ -44,7 +44,7 @@ const ResumenDesktop = () => (
                 <Grid item md={5}/>
             </Grid>
             <Grid item display="flex" justifyContent="center" md={5} pt={10} pb={8}>
-                <Link to="" onClick={() => openInNewTab('https://www.youtube.com/watch?v=RvhMXIV28XE')}>
+                <Link to="/" onClick={() => openInNewTab('https://www.youtube.com/watch?v=RvhMXIV28XE')}>
                     <img
                         src={resumen}
                         alt="resumen"
