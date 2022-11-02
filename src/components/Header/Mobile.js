@@ -22,7 +22,7 @@ const TitleNavbar = styled(Typography)(() => ({
 }));
 
 const SubtitleTypography = styled(Typography)(() => ({
-    fontSize: '0.9rem!important',
+    fontSize: '0.8rem!important',
     fontWeight: 'medium',
     color: 'gray',
     letterSpacing: '0.6px',

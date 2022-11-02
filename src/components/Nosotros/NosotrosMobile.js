@@ -30,9 +30,11 @@ const NosotrosMobile = () => (
         <Grid
             container
             direction="column"
-            sx={{backgroundColor: '#ffffff'}}
+            sx={{
+                backgroundColor: '#ffffff', position: 'relative'
+            }}
         >
-            <Grid item xs={2} pl={5} pt={1}>
+            <Grid item xs={2} pl={5} pt={1} pb={1}>
                 <TitleTypography>
                     NOSOTROS
                 </TitleTypography>
@@ -42,7 +44,7 @@ const NosotrosMobile = () => (
                     src={rectangle}
                     alt="rectangle"
                     style={{
-                        width: '150px', height: '8px'
+                        width: '150px', height: '8px', position: 'absolute', left: 0, bottom: -4
                     }}
                 />
             </Grid>

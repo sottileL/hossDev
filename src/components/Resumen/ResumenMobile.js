@@ -23,10 +23,12 @@ const ResumenMobile = () => (
             <Grid
                 container
                 direction="column"
-                sx={{backgroundColor: '#ffffff'}}
+                sx={{
+                    backgroundColor: '#ffffff', position: 'relative'
+                }}
                 md={12}
             >
-                <Grid item xs={2} pl={7} pt={1}>
+                <Grid item xs={2} pl={7} pt={1} pb={1}>
                     <TitleTypography fontFamily="Arial">
                         RESUMEN DE CUENTA
                     </TitleTypography>
@@ -36,13 +38,13 @@ const ResumenMobile = () => (
                         src={rectangle}
                         alt="rectangle"
                         style={{
-                            width: '150px', height: '8px'
+                            width: '150px', height: '8px', position: 'absolute', left: 0, bottom: -4
                         }}
                     />
                 </Grid>
                 <Grid item md={5}/>
             </Grid>
-            <Grid item display="flex" justifyContent="center" xs={5} pt={3}>
+            <Grid item display="flex" justifyContent="center" xs={5} pt={5}>
                 <Link to="" onClick={() => openInNewTab('https://www.youtube.com/watch?v=RvhMXIV28XE')}>
                     <img
                         src={resumen}
