@@ -841,7 +841,8 @@ export const LightTheme = createTheme({
                 root: {
                     transition: 'background-color .2s',
 
-                    '&.MuiTableRow-hover:hover': {backgroundColor: colors.alpha.black[5]}
+                    '&.MuiTableRow-hover:hover': {backgroundColor: colors.alpha.black[5]},
+                    '&:last-child td': {borderBottom: 0}
                 }
             }
         },
