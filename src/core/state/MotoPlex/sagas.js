@@ -17,24 +17,6 @@ const {
 
 const {SUBMIT_EMAIL} = Types;
 
-// const sendMailClient = async text => {
-//     const client = new SMTPClient({
-//         user: 'motoplex@sportadventure.com.ar',
-//         password: 'webEmail2022',
-//         host: 'c2201651.ferozo.com',
-//         ssl: true,
-//         port: 465
-//     });
-
-//     return client.sendAsync({
-//         text,
-//         from: 'motoplex@sportadventure.com.ar',
-//         to: 'motoplex@sportadventure.com.ar',
-//         cc: 'else <else@your-email.com>',
-//         subject: 'Contacto vía web'
-//     });
-// };
-
 function* submitEmail(form) {
     try {
         yield put(setIsLoading(true));
