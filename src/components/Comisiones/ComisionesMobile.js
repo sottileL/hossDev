@@ -108,7 +108,7 @@ const ComisionesDesktop = () => (
                     >
                         <TableHead>
                             <StyledTableRowHeader>
-                                <StyledTableCell width="50%">COMISIONES POR OPERACIONES CONCEPTO</StyledTableCell>
+                                <StyledTableCell width="50%">COMISIONES</StyledTableCell>
                                 <StyledTableCell width="20%">ARANCEL</StyledTableCell>
                             </StyledTableRowHeader>
                         </TableHead>
