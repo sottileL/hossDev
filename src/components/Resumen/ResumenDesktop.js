@@ -44,12 +44,12 @@ const ResumenDesktop = () => (
                 <Grid item md={5}/>
             </Grid>
             <Grid item display="flex" justifyContent="center" md={5} pt={10} pb={8}>
-                <Link to="" onClick={() => openInNewTab('https://www.youtube.com/watch?v=RvhMXIV28XE')}>
+                <Link to="" onClick={() => openInNewTab('')}>
                     <img
                         src={resumen}
                         alt="resumen"
                         style={{
-                            width: 'auto', height: '30px', justifyContent: 'center'
+                            width: 'auto', height: '50px', justifyContent: 'center'
                         }}
                     />
                 </Link>

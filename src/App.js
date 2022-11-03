@@ -8,12 +8,12 @@ import {
 } from 'react-router-dom';
 import ThemeProvider from './theme/ThemeProvider';
 import {LightTheme} from './theme/theme';
-import Header from './components/Header/Mobile';
-import Footer from './components/Footer/FooterMobile';
-import Nosotros from './components/Nosotros/NosotrosMobile';
-import Comisiones from './components/Comisiones/ComisionesMobile';
-import Resumen from './components/Resumen/ResumenMobile';
-import Contacto from './components/Contacto/ContactoMobile';
+import Header from './components/Header/Desktop';
+import Footer from './components/Footer/FooterDesktop';
+import Nosotros from './components/Nosotros/NosotrosDesktop';
+import Comisiones from './components/Comisiones/ComisionesDesktop';
+import Resumen from './components/Resumen/ResumenDesktop';
+import Contacto from './components/Contacto/ContactoDesktop';
 
 const App = () => (
     <ThemeProvider theme={LightTheme}>

@@ -56,22 +56,22 @@ const HeaderDesktop = ({handleClickMenu}) => (
             </Grid>
             <Grid container md={9} direction="row" display="flex" alignItems="center" justifyContent="flex-end" spacing={3} pt={1}>
                 <Grid item display="flex" alignItems="center" justifyContent="flex-end">
-                    <TitleNavbar component={Link} to="/">
+                    <TitleNavbar component={Link} to="/" className="underlined-button">
                         NOSOTROS
                     </TitleNavbar>
                 </Grid>
                 <Grid item display="flex" alignItems="center" justifyContent="flex-end">
-                    <TitleNavbar component={Link} to="comisiones">
+                    <TitleNavbar component={Link} to="comisiones" className="underlined-button">
                         COMISIONES
                     </TitleNavbar>
                 </Grid>
                 <Grid item display="flex" alignItems="center" justifyContent="flex-end">
-                    <TitleNavbar component={Link} to="resumen">
+                    <TitleNavbar component={Link} to="resumen" className="underlined-button">
                         RESUMEN DE CUENTA
                     </TitleNavbar>
                 </Grid>
                 <Grid item display="flex" alignItems="center" justifyContent="flex-end">
-                    <TitleNavbar component={Link} to="contacto">
+                    <TitleNavbar component={Link} to="contacto" className="underlined-button">
                         CONTACTO
                     </TitleNavbar>
                 </Grid>
