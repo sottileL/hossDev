@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 
-import Logo from '../../images/logo.png';
+import Logo from '../../images/logo.webp';
 
 const TitleNavbar = styled(Typography)(() => ({
     fontSize: '1.2rem!important',

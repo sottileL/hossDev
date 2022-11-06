@@ -8,8 +8,8 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import {styled} from '@mui/styles';
-import rectangle from '../../images/rectangle.png';
-import darklogo from '../../images/darklogo.png';
+import rectangle from '../../images/rectangle.webp';
+import darklogo from '../../images/darklogo.webp';
 
 const TitleTypography = styled(Typography)(() => ({
     fontSize: '1.4rem!important',

@@ -9,7 +9,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import {styled} from '@mui/styles';
 import {Divider} from '@mui/material';
-import logo from '../../images/logo.png';
+import logo from '../../images/logo.webp';
 
 const FooterTypography = styled(Typography)(() => ({
     fontSize: '1.0',

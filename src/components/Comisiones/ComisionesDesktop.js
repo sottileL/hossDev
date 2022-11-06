@@ -17,7 +17,7 @@ import Paper from '@mui/material/Paper';
 import TableCell, {tableCellClasses} from '@mui/material/TableCell';
 import {BorderBottom, BorderTop} from '@mui/icons-material';
 import {borders} from '@mui/system';
-import rectangle from '../../images/rectangle.png';
+import rectangle from '../../images/rectangle.webp';
 
 function createData(
     concepto,

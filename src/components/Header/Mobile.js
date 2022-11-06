@@ -9,7 +9,7 @@ import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import {useHistory} from 'react-router-dom';
 
-import logo from '../../images/logo.png';
+import logo from '../../images/logo.webp';
 
 import Menu from '../MenuComponent';
 

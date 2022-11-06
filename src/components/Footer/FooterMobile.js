@@ -8,7 +8,7 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import {styled} from '@mui/styles';
-import logo from '../../images/logo.png';
+import logo from '../../images/logo.webp';
 
 const FooterTypography = styled(Typography)(() => ({
     fontSize: '0.6rem!important',

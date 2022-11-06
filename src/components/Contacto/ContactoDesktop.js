@@ -5,7 +5,7 @@ import {styled} from '@mui/styles';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import rectangle from '../../images/rectangle.png';
+import rectangle from '../../images/rectangle.webp';
 
 const TitleTypography = styled(Typography)(() => ({
     fontSize: '1.4rem!important',

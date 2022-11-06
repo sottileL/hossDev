@@ -3,8 +3,8 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import {styled} from '@mui/styles';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
-import rectangle from '../../images/rectangle.png';
-import resumen from '../../images/resumen.png';
+import rectangle from '../../images/rectangle.webp';
+import resumen from '../../images/resumen.webp';
 
 const TitleTypography = styled(Typography)(() => ({
     fontSize: '1rem!important',
