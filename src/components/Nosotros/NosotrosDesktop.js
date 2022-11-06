@@ -70,7 +70,7 @@ const NosotrosDesktop = () => (
                     <SubtitleTypography>
                         Somos un agente de inversiones y construimos nuestro trabajo
                         <br/>
-                        de manera tecnológica, transparente seria y ágil.
+                        de manera tecnológica, transparente, seria y ágil.
                         <br/>
                         La educación en el ámbito financiero nos parece fundamental
                         <br/>

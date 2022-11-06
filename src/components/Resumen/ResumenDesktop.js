@@ -44,7 +44,7 @@ const ResumenDesktop = () => (
                 <Grid item md={5}/>
             </Grid>
             <Grid item display="flex" justifyContent="center" md={5} pt={10} pb={8}>
-                <Link to="" onClick={() => openInNewTab('')}>
+                <Link to="" onClick={() => openInNewTab('https://clientes.rosval.com.ar/Irmo/')}>
                     <img
                         src={resumen}
                         alt="resumen"
